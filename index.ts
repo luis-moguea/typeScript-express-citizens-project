@@ -4,7 +4,7 @@ import { router } from "./routes/appRoute"
 
 
 const app = express()
-
+app.use(express.json())
 app.use("/", router)
 
 const port = process.env.PORT

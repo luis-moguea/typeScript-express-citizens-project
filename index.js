@@ -4,6 +4,7 @@ var express = require("express");
 var dotenv = require("dotenv").config();
 var appRoute_1 = require("./routes/appRoute");
 var app = express();
+app.use(express.json());
 app.use("/", appRoute_1.router);
 var port = process.env.PORT;
 app.listen(port, function () {

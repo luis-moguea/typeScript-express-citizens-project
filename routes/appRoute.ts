@@ -5,5 +5,6 @@ export const router = Router();
 
 router.get("/api/citizens", controller.getCitizens);
 router.get("/api/citizens/:id", controller.getCitizen);
-
-console.log(router)
+router.post("/api/citizens", controller.addNewCitizen)
+router.put("/api/citizens/:id", controller.updateCitizen)
+router.delete("/api/citizens/:id", controller.deleteCitizen)

@@ -6,4 +6,6 @@ var appController_1 = require("../controllers/appController");
 exports.router = (0, express_1.Router)();
 exports.router.get("/api/citizens", appController_1.controller.getCitizens);
 exports.router.get("/api/citizens/:id", appController_1.controller.getCitizen);
-console.log(exports.router);
+exports.router.post("/api/citizens", appController_1.controller.addNewCitizen);
+exports.router.put("/api/citizens/:id", appController_1.controller.updateCitizen);
+exports.router["delete"]("/api/citizens/:id", appController_1.controller.deleteCitizen);
