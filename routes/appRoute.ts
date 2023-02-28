@@ -5,3 +5,5 @@ export const router = Router();
 
 router.get("/api/citizens", controller.getCitizens);
 router.get("/api/citizens/:id", controller.getCitizen);
+
+console.log(router)

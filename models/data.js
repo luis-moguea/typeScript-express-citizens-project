@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-exports.data = void 0;
-exports.data = [
+exports.citizens = void 0;
+exports.citizens = [
     { id: 1, name: "Maria", nationality: "Venezuelan" },
     { id: 2, name: "Luis", nationality: "Colombian" },
     { id: 3, name: "Martha", nationality: "American" },
